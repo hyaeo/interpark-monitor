@@ -1,5 +1,4 @@
-
-        for date in PLAY_DATES:
+for date in PLAY_DATES:
             lines = check_remain(date, grade_map)
 
             fmt = (
