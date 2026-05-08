@@ -1,3 +1,4 @@
+
 import requests
 import os
 
@@ -11,6 +12,7 @@ CHAT_ID = os.environ["CHAT_ID"]
 
 PLAY_DATES = ["20260613"]
 
+# 테스트용: "" / 실전: "SOUND CHECK"
 TARGET_KEYWORD = ""
 
 HEADERS = {
@@ -18,17 +20,7 @@ HEADERS = {
     "Referer": "https://tickets.interpark.com/",
     "Origin": "https://tickets.interpark.com",
     "Accept": "application/json, text/plain, */*",
-}
-
-def send_telegram(msg):
-    requests.post(
-        f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage",
-        data={
-            "chat_id": CHAT_ID,
-            "text": msg
-        }
-    )
-
+받은메일 표시
 def get_grade_map():
     url = f"{BASE_URL}/v1/goods/{GOODS_CODE}/bestprices/group"
 
