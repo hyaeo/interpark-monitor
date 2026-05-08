@@ -19,7 +19,7 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0",
     "Referer": "https://tickets.interpark.com/",
     "Origin": "https://tickets.interpark.com",
-    "Accept": "application/json, text/plain, */*",
+    "Accept": "application/json, text/plain, */*"}
 받은메일 표시
 def get_grade_map():
     url = f"{BASE_URL}/v1/goods/{GOODS_CODE}/bestprices/group"
