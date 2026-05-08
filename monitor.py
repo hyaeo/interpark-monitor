@@ -11,7 +11,7 @@ CHAT_ID = os.environ["CHAT_ID"]
 
 PLAY_DATES = ["20260613"]
 
-TARGET_KEYWORD = "SOUND CHECK"
+TARGET_KEYWORD = ""
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0",
